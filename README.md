@@ -16,31 +16,43 @@ OpenAPI / Swagger UI: Integração com Swagger para documentação automática e
 
 🔗 http://localhost:8080/swagger-ui
 
- Segurança
+Segurança:
 A aplicação utiliza autenticação baseada em token JWT, garantindo acesso apenas a usuários válidos. Algumas rotas públicas (como login e registro) são liberadas via configuração do SecurityFilterChain, enquanto demais rotas exigem autenticação.
 
-Arquitetura
+Arquitetura:
+
 A arquitetura está organizada em camadas, promovendo separação de responsabilidades:
 
-Controller: Responsável por receber as requisições HTTP.
+Controller:
 
-Service: Contém a lógica de negócio da aplicação.
+Responsável por receber as requisições HTTP.
 
-Repository: Interface com o banco de dados via JPA.
+Service: 
 
-DTOs e Mappers: Realizam a transformação de entidades em objetos de transferência
+Contém a lógica de negócio da aplicação.
+
+Repository:
+
+Interface com o banco de dados via JPA.
+
+DTOs e Mappers: 
+
+Realizam a transformação de entidades em objetos de transferência
 
 
 Requisições do sistema
 ![image](https://github.com/user-attachments/assets/b5a0a07b-3316-496b-b729-3b52c3263879)
 
 Requisição de login
+
 ![image](https://github.com/user-attachments/assets/cefb2997-bbfc-4149-bffb-18b468d119fd)
 
 Requisição de listagem
+
 ![image](https://github.com/user-attachments/assets/2881f7d8-e361-4579-af95-d40b8062b970)
 
 Requisição de criação
+
 ![image](https://github.com/user-attachments/assets/7c3b5717-ff11-44ef-96e7-c7fa8e80cdac)
 
 
