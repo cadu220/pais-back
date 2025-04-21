@@ -24,20 +24,13 @@ Arquitetura:
 A arquitetura está organizada em camadas, promovendo separação de responsabilidades:
 
 Controller:
-
 Responsável por receber as requisições HTTP.
 
-Service: 
+Service: Contém a lógica de negócio da aplicação.
 
-Contém a lógica de negócio da aplicação.
+Repository: Interface com o banco de dados via JPA.
 
-Repository:
-
-Interface com o banco de dados via JPA.
-
-DTOs e Mappers: 
-
-Realizam a transformação de entidades em objetos de transferência
+DTOs e Mappers: Realizam a transformação de entidades em objetos de transferência
 
 
 Requisições do sistema
